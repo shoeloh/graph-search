@@ -1,7 +1,7 @@
 ﻿# ABOUT  
 In this program I design and implement an intelligent agent to draw a continuous line starting from node A and covering all links once and only once and end up in: (a) node A, (b) anywhere. I do this for two graphs, shown as Figure 1 and Figure 2 below.  
 
-			Figure 1					Figure 2  
+[Figure 1 and Figure 2](images/graph_figures.png)
 
 I utilize both breadth first search (BFS) and depth first search (DFS) algorithms for the intelligent agents.  
 
