@@ -149,7 +149,7 @@ Format of the results is (for Figure 1):
 (last-to-first vertices): 1 3 4 2 3 0 2 1 0  
 
 Meaning the first-to-last traversal is a solution starting at node A and ending at node B following:  
-A - B - C - A - D - C - E - C - B
+A - B - C - A - D - C - E - D - B
 
 ## LICENSE  
 [MIT License](https://github.com/shoeloh/graph-search/blob/master/LICENSE)  
