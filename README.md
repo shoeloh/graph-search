@@ -8,30 +8,9 @@ I utilize both breadth first search (BFS) and depth first search (DFS) algorithm
 # PROBLEM FORMULATION  
 Figure 1:  
 5 nodes on the graph labeled {A,B,C,D,E} or {0,1,2,3,4} interchangeably  
-	        E or 4  
-		*  
-	        /       \  
-D or 3	      *-------*   C or 2  
-	      | \       / |  
-                  |   \   /   |  
-                  |   /   \   |  
-                  | /       \ |  
-A or 0	      *-------*   B or 1  
   
 Figure 2:  
 6 nodes on the graph labeled {A,B,C,D,E,F} or {0,1,2,3,4,5} interchangeably  
-	        E or 4  
-		*  
-	        /       \  
-D or 3	      *-------*   C or 2  
-	      | \       / |  
-                  |   \   /   |  
-                  |   /   \   |  
-                  | /       \ |  
-A or 0	      *-------*   B or 1  
-	        \      /  
-		*  
-  	         F or 5  
 
 ## REPRESENTATION OF AN ARBITRARY STATE  
 A state is defined as:  
@@ -139,10 +118,10 @@ Programs were written in C++
 
 There are 8 program files representing the 8 variation on the problem.  
 
-The 8 variations of the problem are the combinations of:
-2x – Figure 1 and Figure 2
-2x – Node A to Node A and Node A to AnyNode goals
-2x – Breadth First Search (BFS) and Depth First Search (DFS)
+The 8 variations of the problem are the combinations of:  
+2x – Figure 1 and Figure 2  
+2x – Node A to Node A and Node A to AnyNode goals  
+2x – Breadth First Search (BFS) and Depth First Search (DFS)  
 
 Program files are named figure<x>_<y>FS_Ato<z>.cpp  
 Where x=1 for Figure 1 and x=2 for Figure 2  
@@ -166,6 +145,11 @@ $ ./run_script.bash
 
 Results for both the BFS and DFS agents, for both Figure 1 and Figure 2, for both A-to-A and A-to-Any searches are provided in the results folder.  
 
+Format of the results is (for Figure 1):  
+(last-to-first vertices): 1 3 4 2 3 0 2 1 0  
+
+Meaning the first-to-last traversal is a solution starting at node A and ending at node B following:  
+A - B - C - A - D - C - E - C - B
+
 ## LICENSE  
 [MIT License](https://github.com/shoeloh/graph-search/blob/master/LICENSE)  
-
