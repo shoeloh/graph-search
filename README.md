@@ -123,7 +123,7 @@ The 8 variations of the problem are the combinations of:
 2x – Node A to Node A and Node A to AnyNode goals  
 2x – Breadth First Search (BFS) and Depth First Search (DFS)  
 
-Program files are named figure<x>_<y>FS_Ato<z>.cpp  
+Program files are named figure{x}_{y}FS_Ato{z}.cpp  
 Where x=1 for Figure 1 and x=2 for Figure 2  
 Where y=B for breadth first search and y=D for depth first search  
 Where z=Any for starting with Node A and ending at any node  
